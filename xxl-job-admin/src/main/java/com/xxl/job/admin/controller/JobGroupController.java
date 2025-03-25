@@ -99,7 +99,7 @@ public class JobGroupController {
 
 		// process
 		xxlJobGroup.setUpdateTime(new Date());
-
+//TODO-SZY 2025/3/25 唯一键约束code
 		int ret = xxlJobGroupDao.save(xxlJobGroup);
 		return (ret>0)?ReturnT.SUCCESS:ReturnT.FAIL;
 	}
